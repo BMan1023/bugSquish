@@ -93,10 +93,8 @@ function draw() {
     text('Accuracy: ' + (int(squishes / clicks * 100)) + '%', 235 , 280);
 
     textSize(14);
-
+    ellipse(300, 400, 80, 40);
     text('Replay', 185, 310);
-
-    ellipse(200, 300, 80, 40);
 
     if(mouseIsPressed){
       changeScreen(0);
