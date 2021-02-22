@@ -94,7 +94,7 @@ function draw() {
 
     textSize(14);
     ellipse(315, 375, 80, 40);
-    text('Replay', 290, 375);
+    text('Replay', 290, 380);
 
     if(mouseIsPressed){
       if(mouseX < 355 && mouseX > 275 && mouseY < 395 && mouseY > 355){
@@ -129,13 +129,16 @@ function mouseClicked() {
 
   clicks++;
 
-  for(var i = 0; i < bugCount; i++) {
-
-    bug[i].squish(mouseX,mouseY);
-
+  if(screen != 2){
+    for(var i = 0; i < bugCount; i++) {
+  
+      bug[i].squish(mouseX,mouseY);
+  
+    }
+  
+    speed += 2; //rate at which bugs speed up
   }
 
-  speed += 2; //rate at which bugs speed up
 
 }
 
