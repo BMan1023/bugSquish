@@ -94,7 +94,7 @@ function draw() {
 
     textSize(14);
     ellipse(315, 375, 80, 40);
-    text('Replay', 290, 380);
+    text('Replay', 295, 380);
 
     if(mouseIsPressed){
       if(mouseX < 355 && mouseX > 275 && mouseY < 395 && mouseY > 355){
@@ -127,9 +127,9 @@ function changeScreen(x){
 
 function mouseClicked() {
 
-  clicks++;
-
+  
   if(screen != 2){
+    clicks++;
     for(var i = 0; i < bugCount; i++) {
   
       bug[i].squish(mouseX,mouseY);
