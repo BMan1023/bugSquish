@@ -1,5 +1,3 @@
-const { FILL } = require("./p5");
-
 var time = 3; //number of seconds that game lasts
 var score = 0; //starting score
 var bugCount = 35; //the number of bugs that you start with
