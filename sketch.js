@@ -112,6 +112,9 @@ function changeScreen(x){
     time = 30;
     score = 0;
     bug = [];
+    speed = 5;
+    clicks = 0;
+    squishes = 0;
     preload();
   }
   if(x == 2){
