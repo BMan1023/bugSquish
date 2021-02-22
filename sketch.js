@@ -94,7 +94,7 @@ function draw() {
 
     textSize(20);
 
-    text('-Press anywhere to replay-', 185, 315);
+    ellipse(200, 300, 20, 40);
 
     if(mouseIsPressed){
       changeScreen(0);
