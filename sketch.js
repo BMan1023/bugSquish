@@ -1,3 +1,5 @@
+const { FILL } = require("./p5");
+
 var time = 3; //number of seconds that game lasts
 var score = 0; //starting score
 var bugCount = 35; //the number of bugs that you start with
@@ -96,7 +98,9 @@ function draw() {
 
     text('Replay', 185, 310);
 
-    ellipse(200, 300, 20, 40);
+    fill("255,0,0");
+    ellipse(200, 300, 80, 40);
+    noFill();
 
     if(mouseIsPressed){
       changeScreen(0);
