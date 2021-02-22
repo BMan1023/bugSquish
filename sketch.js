@@ -70,10 +70,10 @@ function draw() {
       }
 
       if(score == 35){
-        screenChange(2);
+        changeScreen(2);
       }
       if(time == 0){
-        screenChange(2);
+        changeScreen(2);
       }
 
   }
@@ -98,7 +98,7 @@ function draw() {
     text('-Press anywhere to replay-', 175, 315);
 
     if(mouseIsPressed){
-      screenChange(0);
+      changeScreen(0);
     }
   }
 
