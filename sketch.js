@@ -94,10 +94,12 @@ function draw() {
 
     textSize(14);
     ellipse(315, 375, 80, 40);
-    text('Replay', 280, 400);
+    text('Replay', 290, 375);
 
     if(mouseIsPressed){
-      changeScreen(0);
+      if(mouseX < 355 && mouseX > 275 && mouseY < 395 && mouseY > 355){
+        changeScreen(0);
+      }
     }
   }
 
