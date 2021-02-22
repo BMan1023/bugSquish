@@ -129,14 +129,15 @@ function mouseClicked() {
 
   
   if(screen = 1){
+
     clicks++;
     for(var i = 0; i < bugCount; i++) {
   
       bug[i].squish(mouseX,mouseY);
   
+      speed += 2; //rate at which bugs speed up
     }
   
-    speed += 2; //rate at which bugs speed up
   }
 
 
