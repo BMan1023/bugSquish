@@ -34,8 +34,10 @@ function draw() {
   if(screen == 0){
 
     background(144);
-    textSize(24);
-    text('Bug Squish', 100, 100);
+    textSize(38);
+    text('Bug Squish' 200, 250);
+    textSize(28);
+    text('-Press Anywhere to Start-' 175, 275);
     if(mouseIsPressed){
       changeScreen(1);
     }
@@ -79,7 +81,7 @@ function draw() {
 
   }
   else if(screen == 2){
-
+    gameOver();
   }
 
 
@@ -90,6 +92,7 @@ function changeScreen(x){
   }
   if(x == 1){
     screen = 1;
+    time = 30;
   }
   if(x == 2){
     screen = 2;
