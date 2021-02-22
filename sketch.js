@@ -135,8 +135,8 @@ function mouseClicked() {
   
       bug[i].squish(mouseX,mouseY);
   
-      speed += 2; //rate at which bugs speed up
     }
+    speed += 2; //rate at which bugs speed up
   
   }
 
