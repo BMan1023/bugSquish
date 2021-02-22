@@ -7,6 +7,7 @@ var dir = [-1,1];
 var clicks = 0;
 var squishes = 0;
 var acc;
+var screen = 0;
 
 function preload(){
 
@@ -30,40 +31,69 @@ function setup() {
 
 function draw() {
 
-  background(144);
+  if(screen == 0){
 
-  textSize(24);
-
-  text('Score:', 10, 30); // "Score:" text
-
-  text('Time:', 530 , 30); // "Time:" text
-
-  textSize(28);
-
-  if(score == bugCount){
-    gameOver();
-  }
-
-  if(time > 0){
-
-    text(time, 595 , 30); //prints the time as it counts down
-
-  }
-
-  else if(time == 0){ //game end condition
-
-    gameOver();
-
-  }
-
-  text(score, 85 , 30);
-
-  for(var i = 0; i < bugCount; i++) {
-
-      bug[i].draw();
-
+    background(144);
+    textSize(24);
+    text('Bug Squish', 100, 100);
+    if(mouseIsPressed){
+      changeScreen(1);
     }
 
+  }
+  else if(screen == 1){
+
+    background(144);
+  
+    textSize(24);
+  
+    text('Score:', 10, 30); // "Score:" text
+  
+    text('Time:', 530 , 30); // "Time:" text
+  
+    textSize(28);
+  
+    if(score == bugCount){
+      gameOver();
+    }
+  
+    if(time > 0){
+  
+      text(time, 595 , 30); //prints the time as it counts down
+  
+    }
+  
+    else if(time == 0){ //game end condition
+  
+      gameOver();
+  
+    }
+  
+    text(score, 85 , 30);
+  
+    for(var i = 0; i < bugCount; i++) {
+  
+        bug[i].draw();
+  
+      }
+
+  }
+  else if(screen == 2){
+
+  }
+
+
+}
+function changeScreen(x){
+  if(x == 0){
+    screen = 0;
+  }
+  if(x == 1){
+    screen = 1;
+  }
+  if(x == 2){
+    screen = 2;
+  }
 }
 
 function mouseClicked() {
