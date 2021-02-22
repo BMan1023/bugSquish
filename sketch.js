@@ -45,6 +45,13 @@ function draw() {
   }
   else if(screen == 1){
 
+    if(score == 35){
+      changeScreen(2);
+    }
+    if(time == 0){
+      changeScreen(2);
+    }
+
     background(144);
   
     textSize(24);
@@ -68,14 +75,6 @@ function draw() {
         bug[i].draw();
   
       }
-
-      if(score == 35){
-        changeScreen(2);
-      }
-      if(time == 0){
-        changeScreen(2);
-      }
-
   }
   else if(screen == 2){
 
