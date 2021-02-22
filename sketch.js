@@ -79,9 +79,33 @@ function draw() {
   
       }
 
+      if(score == 35){
+        screenChange(2);
+      }
+      if(time == 0){
+        screenChange(2);
+      }
+
   }
   else if(screen == 2){
-    gameOver();
+
+    text(time, 595 , 30);
+
+    textSize(42);
+  
+    text('Game Over!', 200, 220);
+  
+    textSize(28);
+  
+    text('Score: ' + score, 250 , 250);
+  
+    textSize(22);
+  
+    text('Accuracy: ' + (int(squishes / clicks * 100)) + '%', 235 , 280);
+
+    textSize(28);
+
+    text('-Press anywhere to replay-', 175, 315);
   }
 
 
@@ -123,25 +147,25 @@ function clock(){
 
 }
 
-function gameOver(){
+// function gameOver(){
 
-  text(time, 595 , 30);
+//   text(time, 595 , 30);
 
-  textSize(42);
+//   textSize(42);
 
-  text('Game Over!', 200, 220);
+//   text('Game Over!', 200, 220);
 
-  textSize(28);
+//   textSize(28);
 
-  text('Score: ' + score, 250 , 250);
+//   text('Score: ' + score, 250 , 250);
 
-  textSize(22);
+//   textSize(22);
 
-  text('Accuracy: ' + (int(squishes / clicks * 100)) + '%', 235 , 280);
+//   text('Accuracy: ' + (int(squishes / clicks * 100)) + '%', 235 , 280);
 
-  exit(); // my attempt at ending the game.... this line errors..... effectively ending the game.*shrug*
+//   exit(); // my attempt at ending the game.... this line errors..... effectively ending the game.*shrug*
 
-}
+// }
 
 function scorePlus(){
 
