@@ -35,9 +35,9 @@ function draw() {
 
     background(144);
     textSize(38);
-    text('Bug Squish', 200, 250);
-    textSize(28);
-    text('-Press Anywhere to Start-', 175, 275);
+    text('Bug Squish', 220, 250);
+    textSize(22);
+    text('-Press Anywhere to Start-', 150, 290);
     if(mouseIsPressed){
       changeScreen(1);
     }
@@ -106,6 +106,10 @@ function draw() {
     textSize(28);
 
     text('-Press anywhere to replay-', 175, 315);
+
+    if(mouseIsPressed){
+      screenChange(0);
+    }
   }
 
 
@@ -113,6 +117,8 @@ function draw() {
 function changeScreen(x){
   if(x == 0){
     screen = 0;
+    score = 0;
+    time = 30;
   }
   if(x == 1){
     screen = 1;
@@ -120,6 +126,7 @@ function changeScreen(x){
   }
   if(x == 2){
     screen = 2;
+    
   }
 }
 
