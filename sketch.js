@@ -128,7 +128,7 @@ function changeScreen(x){
 function mouseClicked() {
 
   
-  if(screen = 1){
+  if(screen == 1){
 
     clicks++;
     for(var i = 0; i < bugCount; i++) {
