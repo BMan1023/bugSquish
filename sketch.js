@@ -113,7 +113,7 @@ function changeScreen(x){
   }
   if(x == 1){
     screen = 1;
-    time = 30;
+    time = 3;
     score = 0;
     bug = [];
     speed = 5;
