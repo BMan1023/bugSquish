@@ -106,12 +106,13 @@ function draw() {
 function changeScreen(x){
   if(x == 0){
     screen = 0;
-    score = 0;
-    time = 30;
   }
   if(x == 1){
     screen = 1;
     time = 30;
+    score = 0;
+    bug = [];
+    preload();
   }
   if(x == 2){
     screen = 2;
