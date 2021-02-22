@@ -38,7 +38,7 @@ function draw() {
     text('Bug Squish', 220, 250);
     textSize(22);
     text('-Click Anywhere to Start-', 190, 290);
-    if(mouseIsReleased){
+    if(mouseIsPressed){
       changeScreen(1);
     }
 
@@ -92,7 +92,7 @@ function draw() {
   
     text('Accuracy: ' + (int(squishes / clicks * 100)) + '%', 235 , 280);
 
-    textSize(20);
+    textSize(14);
 
     ellipse(200, 300, 20, 40);
 
