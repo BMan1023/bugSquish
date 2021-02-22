@@ -96,9 +96,7 @@ function draw() {
 
     text('Replay', 185, 310);
 
-    fill("255,0,0");
     ellipse(200, 300, 80, 40);
-    noFill();
 
     if(mouseIsPressed){
       changeScreen(0);
