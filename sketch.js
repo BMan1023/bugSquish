@@ -37,7 +37,7 @@ function draw() {
     textSize(38);
     text('Bug Squish', 220, 250);
     textSize(22);
-    text('-Press Anywhere to Start-', 185, 290);
+    text('-Press Anywhere to Start-', 190, 290);
     if(mouseIsPressed){
       changeScreen(1);
     }
@@ -80,8 +80,6 @@ function draw() {
 
     background(144);
 
-    text(time, 595 , 30);
-
     textSize(42);
   
     text('Game Over!', 200, 220);
@@ -94,9 +92,9 @@ function draw() {
   
     text('Accuracy: ' + (int(squishes / clicks * 100)) + '%', 235 , 280);
 
-    textSize(28);
+    textSize(20);
 
-    text('-Press anywhere to replay-', 175, 315);
+    text('-Press anywhere to replay-', 185, 315);
 
     if(mouseIsPressed){
       changeScreen(0);
