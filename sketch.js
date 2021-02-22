@@ -1,4 +1,4 @@
-var time = 30; //number of seconds that game lasts
+var time = 3; //number of seconds that game lasts
 var score = 0; //starting score
 var bugCount = 35; //the number of bugs that you start with
 var bug = []; //the array where bug objects are stored
@@ -37,8 +37,8 @@ function draw() {
     textSize(38);
     text('Bug Squish', 220, 250);
     textSize(22);
-    text('-Press Anywhere to Start-', 190, 290);
-    if(mouseIsPressed){
+    text('-Click Anywhere to Start-', 190, 290);
+    if(mouseIsReleased){
       changeScreen(1);
     }
 
