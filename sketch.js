@@ -37,7 +37,7 @@ function draw() {
     textSize(38);
     text('Bug Squish', 220, 250);
     textSize(22);
-    text('-Press Anywhere to Start-', 150, 290);
+    text('-Press Anywhere to Start-', 165, 290);
     if(mouseIsPressed){
       changeScreen(1);
     }
