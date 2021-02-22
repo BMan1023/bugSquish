@@ -1,4 +1,4 @@
-var time = 3; //number of seconds that game lasts
+var time = 30; //number of seconds that game lasts
 var score = 0; //starting score
 var bugCount = 35; //the number of bugs that you start with
 var bug = []; //the array where bug objects are stored
@@ -93,8 +93,8 @@ function draw() {
     text('Accuracy: ' + (int(squishes / clicks * 100)) + '%', 235 , 280);
 
     textSize(14);
-    ellipse(315, 355, 80, 40);
-    text('Replay', 293, 360);
+    ellipse(315, 375, 80, 40);
+    text('Replay', 293, 380);
 
     if(mouseIsPressed){
       if(mouseX < 355 && mouseX > 275 && mouseY < 395 && mouseY > 355){
@@ -111,7 +111,7 @@ function changeScreen(x){
   }
   if(x == 1){
     screen = 1;
-    time = 3;
+    time = 30;
     score = 0;
     bug = [];
     speed = 5;
