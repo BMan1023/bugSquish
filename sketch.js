@@ -93,8 +93,8 @@ function draw() {
     text('Accuracy: ' + (int(squishes / clicks * 100)) + '%', 235 , 280);
 
     textSize(14);
-    ellipse(315, 375, 80, 40);
-    text('Replay', 295, 380);
+    ellipse(315, 355, 80, 40);
+    text('Replay', 293, 360);
 
     if(mouseIsPressed){
       if(mouseX < 355 && mouseX > 275 && mouseY < 395 && mouseY > 355){
@@ -128,7 +128,7 @@ function changeScreen(x){
 function mouseClicked() {
 
   
-  if(screen != 2){
+  if(screen = 1){
     clicks++;
     for(var i = 0; i < bugCount; i++) {
   
