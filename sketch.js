@@ -55,19 +55,9 @@ function draw() {
   
     textSize(28);
   
-    if(score == bugCount){
-      gameOver();
-    }
-  
     if(time > 0){
   
       text(time, 595 , 30); //prints the time as it counts down
-  
-    }
-  
-    else if(time == 0){ //game end condition
-  
-      gameOver();
   
     }
   
