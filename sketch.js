@@ -94,6 +94,8 @@ function draw() {
 
     textSize(14);
 
+    text('Replay', 185, 310);
+
     ellipse(200, 300, 20, 40);
 
     if(mouseIsPressed){
