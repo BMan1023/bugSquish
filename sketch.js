@@ -1,4 +1,4 @@
-var time = 30; //number of seconds that game lasts
+var time = 10; //number of seconds that game lasts
 var score = 0; //starting score
 var bugCount = 35; //the number of bugs that you start with
 var bug = []; //the array where bug objects are stored
